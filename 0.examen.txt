@@ -8,25 +8,16 @@ A student chooses one of the task options for the exam. The task must be given t
 Option one
 Create an application for accounting for car sales in a car dealership. The main task is to account for the process of selling cars, record an employee who made the transaction, and calculate the profit.
 You need to store the following information:
-Employee:
-Full name;
-Position;
-Contact phone number;
-Email.
-Car:
-Manufacturer's name;
-Year of manufacture;
-Model;
-Cost price;
-Potential sale price.
+DONE (Employee: Full name; Position; Contact phone number; Email.)
+DONE (Car: Manufacturer's name; Year of manufacture; Model; Cost price; Potential sale price.)
 Sales:
 Employee;
 Vehicle;
 Date of sale;
 Actual sale price.
 The app should provide the following functionality:
-Adding, deleting information about employees.
-Adding, deleting information about cars.
+DONE (Adding, deleting information about employees.)
+DONE (Adding, deleting information about cars.)
 Adding, deleting information about sales.
 Reports. Data can be displayed on the screen or in a file, depending on the user's choice:
 Full information about the company's employees;
