@@ -1,0 +1,176 @@
+Python Basic
+
+Lessons
+
+Version 2.0.0
+A student chooses one of the task options for the exam. The task must be given to a student no later than the start of Module 11 Module Testing. A student completes the task at home. If a student has any questions in the process of implementation, they may ask the teacher in class or at a separate time convenient for the teacher. The final defense of the work is held in the classroom. A student shows the work. The teacher asks any questions about the finished solution.
+
+Option one
+Create an application for accounting for car sales in a car dealership. The main task is to account for the process of selling cars, record an employee who made the transaction, and calculate the profit.
+You need to store the following information:
+Employee:
+Full name;
+Position;
+Contact phone number;
+Email.
+Car:
+Manufacturer's name;
+Year of manufacture;
+Model;
+Cost price;
+Potential sale price.
+Sales:
+Employee;
+Vehicle;
+Date of sale;
+Actual sale price.
+The app should provide the following functionality:
+Adding, deleting information about employees.
+Adding, deleting information about cars.
+Adding, deleting information about sales.
+Reports. Data can be displayed on the screen or in a file, depending on the user's choice:
+Full information about the company's employees;
+Complete information about cars;
+Complete information about sales;
+All sales for a certain date;
+All sales for a certain period of time;
+All sales of a particular employee;
+Name of the best-selling car for the specified period of time;
+Information about the most successful salesperson for the specified period of time;
+Total profit for the specified period of time.
+Saving data to a file.
+Loading data from a file.
+Correct use of design patterns, SOLID principles, and testing mechanisms during the task will allow you to get a higher grade.
+
+
+Option two
+Create an application for accounting for book sales in a bookstore. The main task is to account for the process of selling books, record an employee who made the transaction, and calculate the profit.
+You need to store the following information:
+Employee:
+Full name;
+Position;
+Contact phone number;
+Email.
+Book:
+Title of the book;
+Year of publication;
+Author;
+Genre;
+Cost price;
+Potential selling price.
+Sales:
+Employee;
+Book;
+Date of sale;
+Actual sale price.
+The app should provide the following functionality:
+Adding, deleting information about employees.
+Adding, deleting information about books.
+Adding, deleting information about sales.
+Reports. Data can be displayed on the screen or in a file, depending on the user's choice:
+Full information about the bookstore employees;
+Complete information about books;
+Complete information about sales;
+All sales for a certain date;
+All sales for a certain period of time;
+All sales of a particular employee;
+The name of the best-selling book for the specified time period;
+Information about the most successful trader for the specified period of time;
+Total profit for the specified period of time;
+The best-selling author for the specified period of time;
+The best-selling genre for the specified period of time.
+Saving data to a file.
+Loading data from a file.
+Correct use of design patterns, SOLID principles, and testing mechanisms during the task will allow you to get a higher grade.
+
+
+Option three
+Implement the "Cost Accounting" application. The main task of the application is to store information about the user's expenses.
+The application interface should provide the following features:
+Adding expense categories.
+Deleting expense categories.
+Adding a specific expense. The following information should be provided:
+Name of the expense;
+Date;
+Category.
+Saving expenses to a file.
+Loading expenses from a file.
+Generating reports by the following parameters:
+By date;
+By name;
+By category;
+Display the maximum expense in each category;
+Display the maximum expense in the specified time period;
+Displays the minimum expense in each category;
+Display the minimum expense in the specified time period.
+Correct use of design patterns, SOLID principles, and testing mechanisms during the implementation of the task will allow you to get a higher score.
+
+
+Option four
+Create an "Explanatory Dictionaries" application. The main task of the project is to store dictionaries in different languages and allow a user to find the interpretation of a word or phrase.
+The application interface should provide the following features:
+Create a dictionary. When creating a dictionary, the type of dictionary must be specified. For example, English-Russian or Russian-English.
+Add a word and its definition to an existing dictionary. Since a word can have several definitions, the possibility of creating multiple variants must be supported.
+Replace a word or its definition in the dictionary.
+Delete a word or its definition. When a word is deleted, all its definitions are deleted with it. A word's definition cannot be deleted if it is the last one.
+Search for a word's definition.
+Dictionaries should be stored in files.
+A word and its explanations can be exported to a separate result file.
+When the program is started, the menu for working with the program must be displayed. If selecting a menu item opens a submenu, then it should provide an option to return to the previous menu.
+Correct use of design patterns, SOLID principles, and testing mechanisms during the implementation of the task will allow you to get a higher grade.
+
+
+Option five
+Create a Quiz application. The main objective of the project is to provide a user with the opportunity to test their knowledge in various fields.
+The application interface should provide such opportunities:
+At the start of the application, a user enters a login and password. If a user is not registered, they must go through the registration process.
+During registration, a user must specify:
+Login (you cannot register an existing login);
+Password;
+Date of birth.
+After logging in, a user can:
+Start a new quiz;
+View the results of their previous quizzes;
+See the top 20 for a particular quiz;
+Change the settings. You can change your password and date of birth;
+Exit.
+To start a new quiz, a user should select the knowledge section of the quiz. For example, History, Geography, Biology, etc. There must also be a mixed quiz, where questions are selected from different quizzes on a random basis.
+A particular quiz consists of twenty questions. Each question can have one or more correct answers. If a question has several correct answers and a user does not provide all of them, the question is not scored.
+After completing the quiz, a user receives the number of correct answers to the question, as well as their place in the quiz results table.
+It is also necessary to develop a utility for creating and editing quizzes and their questions. This application should include login and password.
+Correct use of design patterns, SOLID principles, and testing mechanisms in the implementation of the task will allow you to get a higher grade.
+
+
+Option six
+Create a "Home management" application. The main task of the project is to provide a user with the ability to store information about the residents of the house.
+The application interface should provide the following features:
+Adding residents to the building.
+Deleting residents of the house.
+Adding apartments (the ability to add floor information is required).
+Deleting apartments.
+Assigning tenants to an apartment.
+Unassigning tenants from an apartment.
+Saving information to a file.
+Loading information from a file.
+Generating reports by the following parameters:
+Display the full list of tenants;
+Display a complete list of apartments;
+Display information about a specific apartment;
+Display information about apartments on a specific floor;
+Display information about apartments of the same type (for example, display all one-room apartments).
+Correct use of design patterns, SOLID principles, and testing mechanisms during the task will allow you to get a higher score.
+
+
+
+
+
+
+
+
+
+
+
+
+© STEP IT Academy, itstep.org
+
+All the copyrighted photos, audio, and video works, fragments of which are used in the material, are the property of their respective owners. Fragments of the works are used for illustrative purposes to the extent justified by the objective, within the educational process, and for educational purposes, in accordance with the Act of “On Copyright and Related Rights”. The scope and method of the cited works are in accordance with the adopted norms, without prejudice to the normal exploitation of copyright, and do not prejudice the legitimate interests of authors and right holders. At the time of use, the cited works fragments cannot be replaced by alternative, non-copyrighted counterparts and meet the criteria for fair use. All rights reserved. Any reproduction of the materials or its part is prohibited. Use of the works or their fragments must be agreed upon with authors and rights holders. Agreed material use is only possible with reference to the source. Responsibility for unauthorized copying and commercial use of the material is determined by the current legislation.
