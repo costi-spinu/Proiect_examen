@@ -279,7 +279,7 @@ class ManagerAngajati:
             return
 
         if len(gasiti) > 1:
-            print("⚠️ Mai mulți angajați găsiți:")
+            print("Mai mulți angajați găsiți:")
             for e in gasiti:
                 print_employee(e)
             id_selectat = input("Introdu ID-ul celui de modificat: ").strip()

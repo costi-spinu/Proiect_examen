@@ -29,7 +29,7 @@ class MeniuAngajati:
                     nume += ".json"
                 with open(nume, "w", encoding="utf-8") as f:
                     f.write("[]")
-                print(f"✅ Fișierul '{nume}' a fost creat.")
+                print(f" Fișierul '{nume}' a fost creat.")
                 return nume
             else:
                 print("Opțiune invalidă. Reîncearcă!")

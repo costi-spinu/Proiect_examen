@@ -1,0 +1,38 @@
+[
+    {
+        "id": "CAR-001",
+        "fabricatie": "Dacia",
+        "anul": 2002,
+        "model": "Logan",
+        "pret_cost": 12000.0,
+        "potential_pret_vanzare": 3200.0,
+        "nr_inmatriculare": "B118EPD"
+    },
+    {
+        "id": "CAR-002",
+        "fabricatie": "Ford",
+        "anul": 2023,
+        "model": "Puma",
+        "pret_cost": 24500.0,
+        "potential_pret_vanzare": 20000.0,
+        "nr_inmatriculare": "B118TTF"
+    },
+    {
+        "id": "CAR-003",
+        "fabricatie": "Volkswagen",
+        "anul": 2016,
+        "model": "Tiguan",
+        "pret_cost": 24000.0,
+        "potential_pret_vanzare": 10000.0,
+        "nr_inmatriculare": "CL05MXC"
+    },
+    {
+        "id": "CAR-004",
+        "fabricatie": "Volkswagen",
+        "anul": 2000,
+        "model": "Golf IV",
+        "pret_cost": 2000.0,
+        "potential_pret_vanzare": 2000.0,
+        "nr_inmatriculare": "CL05MKI"
+    }
+]

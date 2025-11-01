@@ -1,48 +1,52 @@
-from typing import Dict
 from datetime import datetime
+from typing import Dict, Any
 
 
-class Car:
-    """Clasa pentru gestionarea datelor unei masini."""
+class Masina:
+    """Clasă pentru gestionarea datelor unei mașini."""
 
-    counter_ID = 0  # contor global pentru ID-uri masini
+    contor_ID = 0  # contor global pentru ID-uri mașini
 
     def __init__(
         self,
-        manufacturer: str = "",
-        year: int = 0,
+        fabricatie: str = "",
+        anul: int = 0,
         model: str = "",
-        cost_price: float = 0.0,
-        potential_sale_price: float = 0.0,
+        pret_cost: float = 0.0,
+        potential_pret_vanzare: float = 0.0,
+        nr_inmatriculare: str = "",
     ):
-        Car.counter_ID += 1
-        self.ID = f"CAR-{Car.counter_ID:03d}"
-        self.manufacturer = manufacturer
-        self.year = year
+        Masina.contor_ID += 1
+        self.ID = f"CAR-{Masina.contor_ID:03d}"
+        self.fabricatie = fabricatie
+        self.anul = anul
         self.model = model
-        self.cost_price = cost_price
-        self.potential_sale_price = potential_sale_price
+        self.pret_cost = pret_cost
+        self.potential_pret_vanzare = potential_pret_vanzare
+        self.nr_inmatriculare = nr_inmatriculare
 
-    def creare_dictionar(self) -> Dict:
-        """Creeaza un dictionar cu datele masinii."""
+    def creare_dictionar(self) -> Dict[str, Any]:
+        """Creează un dicționar cu datele mașinii."""
         return {
             "id": self.ID,
-            "manufacturer": self.manufacturer,
-            "year": self.year,
+            "fabricatie": self.fabricatie,
+            "anul": self.anul,
             "model": self.model,
-            "cost_price": self.cost_price,
-            "potential_sale_price": self.potential_sale_price,
+            "pret_cost": self.pret_cost,
+            "potential_pret_vanzare": self.potential_pret_vanzare,
+            "nr_inmatriculare": self.nr_inmatriculare,
         }
 
     def introducere_date(self):
-        """Introduce datele masinii (ID se genereaza automat)."""
-        print("\n=== INTRODUCERE DATE MASINA ===")
+        """Introduce datele mașinii (ID se generează automat)."""
+        print("\n=== INTRODUCERE DATE MAȘINĂ ===")
         campuri = {
-            "manufacturer": "Producator",
-            "year": "An fabricatie",
+            "fabricatie": "Producător (ex: Dacia, Toyota)",
+            "anul": "An fabricație",
             "model": "Model",
-            "cost_price": "Pret de achizitie (€)",
-            "potential_sale_price": "Pret potential de vanzare (€)",
+            "pret_cost": "Preț de achiziție (€)",
+            "potential_pret_vanzare": "Preț potențial de vânzare (€)",
+            "nr_inmatriculare": "Numar de inmatriculare",
         }
 
         for atribut, mesaj in campuri.items():
@@ -50,33 +54,33 @@ class Car:
             while not valoare:
                 valoare = input(f"{mesaj}: ").strip()
                 if not valoare:
-                    print(" Camp obligatoriu!")
+                    print(" Câmp obligatoriu!")
 
-            # Validari simple:
-            if atribut == "year":
+            # Validări simple:
+            if atribut == "anul":
                 try:
                     valoare = int(valoare)
-                    current_year = datetime.now().year
-                    if valoare < 1900 or valoare > current_year + 1:
-                        print(" An invalid! Reintroduceti.")
+                    an_curent = datetime.now().year
+                    if valoare < 1900 or valoare > an_curent + 1:
+                        print("An invalid! Reintroduceți.")
                         return self.introducere_date()
                 except ValueError:
-                    print(" Trebuie sa fie un numar.")
+                    print(" Trebuie să fie un număr.")
                     return self.introducere_date()
-            elif atribut in ["cost_price", "potential_sale_price"]:
+            elif atribut in ["pret_cost", "potential_pret_vanzare"]:
                 try:
                     valoare = float(valoare)
                 except ValueError:
-                    print(" Trebuie sa fie o valoare numerica (ex: 25000.00).")
+                    print(" Trebuie să fie o valoare numerică (ex: 25000.00).")
                     return self.introducere_date()
 
             setattr(self, atribut, valoare)
 
-        print(f" ID generat automat: {self.ID}")
+        print(f"ID generat automat: {self.ID}")
 
     def __str__(self):
         return (
-            f"{self.ID} | {self.manufacturer} {self.model} ({self.year}) | "
-            f"Achizitie: {self.cost_price:.2f} € | "
-            f"Vanzare potentiala: {self.potential_sale_price:.2f} €"
+            f"{self.ID} | {self.fabricatie} {self.model} ({self.anul}) | "
+            f"Achiziție: {self.pret_cost:.2f} € | "
+            f"Vânzare potențială: {self.potential_pret_vanzare:.2f} €"
         )
