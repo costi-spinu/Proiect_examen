@@ -10,18 +10,15 @@ Create an application for accounting for car sales in a car dealership. The main
 You need to store the following information:
 DONE (Employee: Full name; Position; Contact phone number; Email.)
 DONE (Car: Manufacturer's name; Year of manufacture; Model; Cost price; Potential sale price.)
-Sales:
-Employee;
-Vehicle;
-Date of sale;
-Actual sale price.
+Sales:(Employee;Vehicle;Date of sale;Actual sale price.)
+
 The app should provide the following functionality:
 DONE (Adding, deleting information about employees.)
 DONE (Adding, deleting information about cars.)
-Adding, deleting information about sales.
+DONE (Adding, deleting information about sales.)
 Reports. Data can be displayed on the screen or in a file, depending on the user's choice:
-Full information about the company's employees;
-Complete information about cars;
+DONE Full information about the company's employees;
+DONE Complete information about cars;
 Complete information about sales;
 All sales for a certain date;
 All sales for a certain period of time;
