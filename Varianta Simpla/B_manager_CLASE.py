@@ -112,17 +112,17 @@ class ManagerAngajati:
     def cauta(self, termen: str) -> List[Dict]:
         t = termen.lower()
         return self.repo.cauta(
-            lambda e: t in e["id"].lower()
+            lambda e: t in e["ID"].lower()
             or t in e["nume"].lower()
             or t in e["prenume"].lower()
-            or t in e["telefon"].lower()
+            or t in e["nrTelefon"].lower()
             or t in e["email"].lower()
         )
 
     # ȘTERGERE după telefon
     # -------------------------------------------------------
     def sterge_dupa_telefon(self, telefon: str) -> bool:
-        return self.repo.sterge(lambda e: e["telefon"] == telefon)
+        return self.repo.sterge(lambda e: e["nrTelefon"] == telefon)
 
     # -------------------------------------------------------
     # MODIFICARE după telefon
@@ -134,7 +134,7 @@ class ManagerAngajati:
                 if v not in ("", None, False):
                     e[k] = v
 
-        return self.repo.actualizeaza(lambda e: e["telefon"] == telefon, update)
+        return self.repo.actualizeaza(lambda e: e["nrTelefon"] == telefon, update)
 
 
 # ============================================================
@@ -219,12 +219,25 @@ class ManagerMasini:
             for k, v in campuri.items():
                 if v in ("", None):
                     continue
-                if k in ("pret_cost", "potential_pret_vanzare"):
-                    v = float(v)
+
+                if k == "nr_inmatriculare_nou":
+                    m["nr_inmatriculare"] = v.upper()
+                    continue
+
+                # conversii necesare
+                if k == "pret_cost":
+                    m[k] = float(v)
+                    continue
+
+                if k == "potential_pret_vanzare":
+                    m[k] = float(v)
+                    continue
+
                 if k == "anul":
-                    v = int(v)
-                if k == "nr_inmatriculare":
-                    v = v.upper()
+                    m[k] = int(v)
+                    continue
+
+                # restul câmpurilor
                 m[k] = v
 
         return self.repo.actualizeaza(

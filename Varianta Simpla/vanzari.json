@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "data": "2000-09-25",
+        "angajat_id": "ID-01",
+        "angajat_nume": "Costi",
+        "masina_id": "CAR-01",
+        "masina_model": "Dacia",
+        "profit": 1000.0
+    },
+    {
+        "data": "2025-11-08",
+        "angajat_id": "ID-01",
+        "angajat_nume": "Costi",
+        "masina_id": "CAR-01",
+        "masina_model": "Dacia",
+        "profit": 2000.0
+    }
+]

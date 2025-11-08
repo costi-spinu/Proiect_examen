@@ -85,7 +85,7 @@ class MeniuAngajati:
             "nume": cere_input("Nume (opțional)", optional=True),
             "prenume": cere_input("Prenume (opțional)", optional=True),
             "ocupatie": cere_input("Ocupatie (opțional)", optional=True),
-            "telefon": cere_input("Telefon nou (opțional)", optional=True),
+            "nrTelefon": cere_input("Telefon nou (opțional)", optional=True),
             "email": cere_input("Email (opțional)", optional=True),
             "adresa": cere_input("Adresă (opțional)", optional=True),
         }
@@ -210,16 +210,15 @@ class MeniuMasini:
     def modifica(self):
         nr = cere_input("Numărul de înmatriculare al mașinii de modificat")
         print("Lasă câmpul gol dacă nu vrei să modifici un câmp.")
-
         campuri = {
             "fabricatie": cere_input("Producător (opțional)", optional=True),
-            "model": cere_input("Model (opțional)", optional=True),
             "anul": cere_input("An fabricație (opțional)", optional=True),
+            "model": cere_input("Model (opțional)", optional=True),
             "pret_cost": cere_input("Preț achiziție (opțional)", optional=True),
             "potential_pret_vanzare": cere_input(
                 "Preț vânzare (opțional)", optional=True
             ),
-            "nr_inmatriculare": cere_input(
+            "nr_inmatriculare_nou": cere_input(
                 "Nr. înmatriculare NOU (opțional)", optional=True
             ),
         }
