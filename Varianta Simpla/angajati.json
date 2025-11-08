@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "ID-01",
+        "nume": "Costi",
+        "prenume": "Spinu",
+        "ocupatie": "Arhitect",
+        "nrTelefon": "0743544744",
+        "email": "costispinu@gmail.com",
+        "adresa": "CT,RO"
+    },
+    {
+        "ID": "ID-02",
+        "nume": "Mihaela",
+        "prenume": "Balaceanu",
+        "ocupatie": "Consultant IT",
+        "nrtelefon": "0721874212",
+        "email": "miki.outlook.com",
+        "adresa": "Ne,CL,RO"
+    },
+    {
+        "ID": "ID-03",
+        "nume": "Balaceanu",
+        "prenume": "Mihaela",
+        "ocupatie": "Constultant manager",
+        "nrtelefon": "1234567890",
+        "email": "bala@outlook.com",
+        "adresa": "ro,Ro"
+    },
+    {
+        "ID": "ID-03",
+        "nume": "Spinu",
+        "prenume": "Costelus",
+        "ocupatie": "Arhitect",
+        "nrtelefon": "0743544744",
+        "email": "costispinu@gmail.com",
+        "adresa": "CT,RO"
+    }
+]

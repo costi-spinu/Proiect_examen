@@ -61,9 +61,3 @@ class ListaAngajati:
             f"{self.ID} | {self.nume} {self.prenume} | {self.ocupatie} | "
             f"{self.nrTelefon} | {self.email} | {self.adresa}"
         )
-
-
-
-    
-
-   
