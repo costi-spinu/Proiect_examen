@@ -2,19 +2,10 @@
     {
         "id": "CAR-001",
         "fabricatie": "Dacia",
-        "anul": 2012,
+        "anul": 2002,
         "model": "Logan",
-        "pret_cost": 5000.0,
-        "potential_pret_vanzare": 3000.0,
+        "pret_cost": 12000.0,
+        "potential_pret_vanzare": 5000.0,
         "nr_inmatriculare": "B118EPD"
-    },
-    {
-        "id": "CAR-002",
-        "fabricatie": "Ford",
-        "anul": 2023,
-        "model": "PUMA II",
-        "pret_cost": 24500.0,
-        "potential_pret_vanzare": 20000.0,
-        "nr_inmatriculare": "B118TTF"
     }
 ]

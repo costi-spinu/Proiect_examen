@@ -1,18 +1,34 @@
 [
     {
-        "data": "2000-09-25",
+        "data": "2020-05-25",
         "angajat_id": "ID-01",
         "angajat_nume": "Costi",
-        "masina_id": "CAR-01",
+        "masina_id": "Spinu",
         "masina_model": "Dacia",
-        "profit": 1000.0
+        "profit": 12000.0
     },
     {
-        "data": "2025-11-08",
+        "data": "2025-11-24",
         "angajat_id": "ID-01",
         "angajat_nume": "Costi",
-        "masina_id": "CAR-01",
+        "masina_id": "CR-01",
         "masina_model": "Dacia",
         "profit": 2000.0
+    },
+    {
+        "data": "2025-11-15",
+        "angajat_id": "ID-01",
+        "angajat_nume": "Mihaela",
+        "masina_id": "CR-02",
+        "masina_model": "Bmw",
+        "profit": 2300.0
+    },
+    {
+        "data": "2025-11-15",
+        "angajat_id": "ID-03",
+        "angajat_nume": "Mihaela",
+        "masina_id": "CR-03",
+        "masina_model": "Volkswagen",
+        "profit": 2100.0
     }
 ]
